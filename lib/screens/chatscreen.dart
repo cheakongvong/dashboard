@@ -53,6 +53,14 @@ class _ChatScreenState extends State<ChatScreen> {
           Container(
             margin: const EdgeInsets.all(10),
             child: TextField(
+              onSubmitted: (_) async {
+                isAdmin
+                    ? await service.addChatMessage(adminId, uid, 'ChatID',
+                        _messageController.text.trim(), '')
+                    : await service.addChatMessage(uid, adminId, 'ChatID',
+                        _messageController.text.trim(), '');
+                _messageController.clear();
+              },
               controller: _messageController,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
