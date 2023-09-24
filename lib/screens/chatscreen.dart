@@ -12,7 +12,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  final String adminId = 'ZDAcfbR3ycXfgx1ydbqTthosZ0Z2';
+  final String adminId = '2InStQiG4bWurUw4PztB87SsiRu2';
   bool isAdmin = false;
 
   final service = FirestoreService();
@@ -88,7 +88,7 @@ class MessageStreamer extends StatefulWidget {
 }
 
 class _MessageStreamerState extends State<MessageStreamer> {
-  final String adminId = 'ZDAcfbR3ycXfgx1ydbqTthosZ0Z2';
+  final String adminId = '2InStQiG4bWurUw4PztB87SsiRu2';
 
   final service = FirestoreService();
   final String uid = FirebaseAuth.instance.currentUser!.uid;

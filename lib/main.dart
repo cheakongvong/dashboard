@@ -11,13 +11,13 @@ Future<void> main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyDUGfrcTu4YMGL7LgGz_oSF82exGUXkHho",
-        authDomain: "chat-tomorrow.firebaseapp.com",
-        projectId: "chat-tomorrow",
-        storageBucket: "chat-tomorrow.appspot.com",
-        messagingSenderId: "981714825307",
-        appId: "1:981714825307:web:8867d02a0048a656bf8f7e",
-        measurementId: "G-T893R0XEV1",
+        apiKey: "AIzaSyD5Af7i1JRyCZpDZA7fwK9xvA08IFoeE6o",
+        authDomain: "dashboard-tomorrow.firebaseapp.com",
+        projectId: "dashboard-tomorrow",
+        storageBucket: "dashboard-tomorrow.appspot.com",
+        messagingSenderId: "68018638864",
+        appId: "1:68018638864:web:ee812f8bc797e66ffd7a95",
+        measurementId: "G-F06L1GJ3SX",
       ),
     );
   } else {
